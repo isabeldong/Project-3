@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Project-3
+CS 198-99 Project 3: Final Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**** #1 pre
 
-## Available Scripts
+step1: open the terminal in laptop and 
+node.js and npm should be installed in your laptop.
 
-In the project directory, you can run:
+  code : node --version
 
-### `npm start`
+  
+  code : npm --version
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+step2: make folder : ""C:\Users\chhw\react-projects\my-app"
+It is most important not to work in OneDrive folders such as Desktop, Documents, Pictures, etc.
 
-### `npm test`
+make folder > open that folder on the vscode > make new terminal in vscode > write code
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  code : npx create-react-app .
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+step3: check if it works well
+  code : npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+if it says, " Compiled with problems: ×
+ERROR in ./src/reportWebVitals.js 5:4-24
+Module not found: Error: Can't resolve 'web-vitals' in 'C:\Users\chhw\react-projects\my-app\src'"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In the reportWebVitals.js file, the module called "web-vitals" is being imported, but an error occurred because "web-vitals" is not installed.
 
-### `npm run eject`
+  code : npm install web-vitals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  code : npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**** #2 main code
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If the initial setup is complete, you can pull the content currently uploaded on GitHub and use it.
+The structure up to the main page has been completed. (Up to 18 minutes in the video)
