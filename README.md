@@ -1,7 +1,8 @@
 # Project-3
 CS 198-99 Project 3: Final Project
 
-#1 pre
+**** #1 pre
+
 step1: open the terminal in laptop and 
 node.js and npm should be installed in your laptop.
 
@@ -33,6 +34,7 @@ In the reportWebVitals.js file, the module called "web-vitals" is being imported
 
   code : npm start
 
-#2 main code
+**** #2 main code
+
 If the initial setup is complete, you can pull the content currently uploaded on GitHub and use it.
 The structure up to the main page has been completed. (Up to 18 minutes in the video)
