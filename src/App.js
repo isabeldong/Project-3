@@ -1,8 +1,49 @@
 import './App.css';
+import { useState } from 'react';
+import About from './About';
 
 function App() {
+  const [showAbout, setShowAbout] = useState(false);
+
+  if (showAbout) {
+    return (
+      <main>
+        <div style={{ textAlign: 'center', marginBottom: '10px' }}>
+          <button 
+            onClick={() => setShowAbout(false)} 
+            style={{
+              backgroundColor: '#ddd', 
+              border: 'none', 
+              borderRadius: '5px', 
+              padding: '5px 10px',
+              cursor: 'pointer'
+            }}
+          >
+            Home
+          </button>
+        </div>
+        <About />
+      </main>
+    );
+  }
+
   return (
     <main>
+      <div style={{ textAlign: 'center', marginBottom: '10px' }}>
+        <button 
+          onClick={() => setShowAbout(true)} 
+          style={{
+            backgroundColor: '#ddd', 
+            border: 'none', 
+            borderRadius: '5px', 
+            padding: '5px 10px',
+            cursor: 'pointer'
+          }}
+        >
+          About Us
+        </button>
+      </div>
+
       <h1>$400<span>.00</span></h1>
       <form>
         <div className="basic">
