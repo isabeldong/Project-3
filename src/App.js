@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import SpendingSummary from './SpendingSummary'; // 대소문자 정확히!
+import AboutUs from './About.js';
 
 function App() {
   const [name, setName] = useState('');
@@ -56,7 +57,7 @@ function App() {
   return (
     <Router>
       <nav style={{ marginBottom: '20px' }}>
-        <Link to="/">🏠 Home</Link> | <Link to="/summary">📊 Summary</Link>
+        <Link to="/">🏠 Home</Link> | <Link to="/summary">📊 Summary</Link> | <Link to="aboutus"> About us</Link>
       </nav>
 
       <Routes>
@@ -120,6 +121,7 @@ function App() {
         } />
         
         <Route path="/summary" element={<SpendingSummary transactions={transactions} />} />
+        <Route path="/aboutus" element={<AboutUs />}/>
       </Routes>
     </Router>
   );
